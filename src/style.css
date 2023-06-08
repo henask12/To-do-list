@@ -1,0 +1,256 @@
+/* Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text: #414856;
+  --disabled: #c0c3d1;
+  --background: #fff;
+  --font: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #e8e8e8;
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 3vh;
+}
+
+/* Text Styles */
+
+h1,
+p,
+button {
+  font-family: var(--font);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -8%;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+.container {
+  background: var(--background);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+  max-width: 25rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.clear {
+  border: none;
+  max-width: 31rem;
+  width: 109%;
+  margin: -18px -16px;
+  height: 2.3rem;
+}
+
+.container .header {
+  padding: 1.5rem 0;
+}
+
+.container .header h1 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -8%;
+}
+
+.container hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.container #task-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.container .input-section {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 10px;
+  position: relative;
+}
+
+.container .enter-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container #task-input {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  font-style: italic;
+}
+
+.container input[type=text]:focus {
+  outline: none;
+  border: none;
+}
+
+.container .add-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  height: 100%;
+  width: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: no-repeat center/60% url('./images/arrow-enter.svg');
+}
+
+.container .edit-btn {
+  display: block;
+  position: relative;
+  padding: 12px 8px;
+  height: 100%;
+  width: 1.5rem;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  opacity: 0.6;
+  background: no-repeat center/20% url('./images/vertical-dots-icon.svg');
+}
+
+.container .edit-btn::before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.container .edit-btn:hover::before {
+  opacity: 1;
+}
+
+.container .edit-btn:hover,
+.container .edit-btn:focus {
+  opacity: 1;
+}
+
+.container .btn-delete {
+  display: none;
+  position: relative;
+  padding: 8px 8px;
+  height: 100%;
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border: none;
+  opacity: 0.6;
+  background: no-repeat center/20% url('./images/delete.svg');
+}
+
+.container .btn-delete::before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.container .btn-delete:hover::before {
+  opacity: 1;
+}
+
+.container .btn-delete:hover,
+.container .btn-delete:focus {
+  opacity: 1;
+}
+
+.container button:hover {
+  background-color: #a1a1a1;
+}
+
+.container #todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container #todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.container #todo-list li:last-child {
+  border-bottom: none;
+}
+
+.container #todo-list .checkbox {
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.clear #clear-completed-button {
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #d1d1d1;
+  color: #747373;
+  cursor: pointer;
+}
+
+.container #clear-completed-button:hover {
+  text-decoration: underline;
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  color: var(--disabled);
+  cursor: not-allowed;
+}
