@@ -58,12 +58,9 @@
 -   **[Task Completion]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> There is no live demo for now stay tunned!
+> [Live Demo](https://henask12.github.io/To-do-list/dist/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,8 +129,6 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 -   [ ] **[Edit Tasks]**
 -   [ ] **[Delete Tasks]**
 -   [ ] **[Persistent Storage]**
@@ -179,6 +174,6 @@ I would like to thank the following individuals and resources for their inspirat
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
