@@ -1,7 +1,6 @@
 import './style.css';
-import { makeTaskDescriptionEditable, handleDeleteButtonClick } from './js/taskHandlers';
 import {
-  loadTasks, saveTasks, populateTaskList, addTask, clearTasks, taskList, tasks,
+  loadTasks, populateTaskList, addTask, clearTasks,
 } from './js/displayTask.js';
 
 const taskForm = document.getElementById('task-form');
