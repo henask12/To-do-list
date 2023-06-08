@@ -29,6 +29,15 @@ const populateTaskList = () => {
     listItem.appendChild(checkbox);
     listItem.appendChild(taskDescription);
 
+    // Create the edit button
+    const editButton = document.createElement('button');
+    editButton.classList.add('edit-btn');
+    listItem.appendChild(editButton);
+    // Create the delete button
+    const deleteButton = document.createElement('button');
+    deleteButton.classList.add('btn-delete');
+    listItem.appendChild(deleteButton);
+
     if (task.completed) {
       listItem.classList.add('completed');
     }
