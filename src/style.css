@@ -170,14 +170,14 @@ p {
 .container .btn-delete {
   display: none;
   position: relative;
-  padding: 8px 8px;
+  padding: 12px 8px;
   height: 100%;
   width: 1.5rem;
-  margin-left: 0.5rem;
+  margin-left: auto;
   cursor: pointer;
   border: none;
   opacity: 0.6;
-  background: no-repeat center/20% url('./images/delete.svg');
+  background: no-repeat center/60% url('./images/delete.svg');
 }
 
 .container .btn-delete::before {
