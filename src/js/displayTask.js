@@ -148,6 +148,8 @@ export const populateTaskList = () => {
 
     const editButton = document.createElement('button');
     const deleteButton = document.createElement('button');
+    editButton.setAttribute('type', 'button');
+    deleteButton.setAttribute('type', 'button');
     editButton.classList.add('edit-btn');
     editButton.addEventListener('click', () => {
       editButton.style.display = 'none'; // Hide the edit button
