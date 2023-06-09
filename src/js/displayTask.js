@@ -55,7 +55,8 @@ export const handleDeleteButtonClick = (event) => {
     tasks[i].index = i + 1;
   }
 
-  saveTasks();
+  saveTasks(); // eslint-disable-next-line no-use-before-define
+  populateTaskList();
 };
 
 export const populateTaskList = () => {
