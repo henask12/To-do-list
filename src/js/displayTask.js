@@ -1,3 +1,5 @@
+import updateStatus from './updateStatus.js';
+
 let tasks = [];
 
 export const taskList = document.getElementById('todo-list');
@@ -68,12 +70,7 @@ export const populateTaskList = () => {
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.classList.add('checkbox');
-    checkbox.checked = task.completed;
-    checkbox.addEventListener('change', () => {
-      task.completed = checkbox.checked;
-      listItem.classList.toggle('completed', task.completed);
-      saveTasks();
-    });
+    updateStatus(checkbox, task, listItem, saveTasks);
 
     const taskDescription = document.createElement('span');
     taskDescription.addEventListener('click', makeTaskDescriptionEditable);
