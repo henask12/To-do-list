@@ -220,6 +220,11 @@ p {
   border-bottom: 1px solid #ccc;
 }
 
+#todo-list li:hover {
+  background-color: #f0f0f0;
+  cursor: move;
+}
+
 .container #todo-list li:last-child {
   border-bottom: none;
 }
@@ -249,4 +254,12 @@ p {
   text-decoration-thickness: 2px;
   color: var(--disabled);
   cursor: not-allowed;
+}
+
+li.dragging {
+  opacity: 1;
+}
+
+li.drag-over {
+  border: 2px dashed blue;
 }

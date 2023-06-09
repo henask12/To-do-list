@@ -14,6 +14,7 @@
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/henask12/To-do-list/issues"
@@ -35,5 +36,8 @@
     "webpack": "^5.85.1",
     "webpack-cli": "^5.1.3",
     "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
