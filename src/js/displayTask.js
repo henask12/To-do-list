@@ -128,7 +128,15 @@ export const addTask = (description) => {
 };
 
 export const clearTasks = () => {
-  tasks = tasks.filter((task) => !task.completed);
+  const incompleteTasks = tasks.filter((task) => !task.completed);
+
+  // Adjust the index of remaining tasks
+  incompleteTasks.forEach((task, index) => {
+    task.index = index + 1;
+  });
+
+  tasks = incompleteTasks;
+
   populateTaskList();
   saveTasks();
 };
