@@ -8,9 +8,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -61,15 +59,13 @@ p {
   box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
   max-width: 25rem;
   width: 100%;
-  padding: 1rem;
   margin: 0 auto;
 }
 
 .clear {
   border: none;
   max-width: 31rem;
-  width: 109%;
-  margin: -18px -16px;
+  width: 100%;
   height: 2.3rem;
 }
 
@@ -174,14 +170,14 @@ p {
 .container .btn-delete {
   display: none;
   position: relative;
-  padding: 8px 8px;
+  padding: 12px 8px;
   height: 100%;
   width: 1.5rem;
-  margin-left: 0.5rem;
+  margin-left: auto;
   cursor: pointer;
   border: none;
   opacity: 0.6;
-  background: no-repeat center/20% url('./images/delete.svg');
+  background: no-repeat center/60% url('./images/delete.svg');
 }
 
 .container .btn-delete::before {

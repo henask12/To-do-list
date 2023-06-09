@@ -56,6 +56,9 @@
 
 -   **[Task Management]**
 -   **[Task Completion]**
+-   **[Edit Tasks]**
+-   **[Delete Tasks]**
+-   **[Persistent Storage]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -129,9 +132,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--   [ ] **[Edit Tasks]**
--   [ ] **[Delete Tasks]**
--   [ ] **[Persistent Storage]**
+-   [ ] **[Interactive To Do list]**
+-   [ ] **[Add animation]**
+-   [ ] **[Drag and Drop or reorder task]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
