@@ -11,28 +11,30 @@
 
 <body>
   <!-- Updated Version -->
-<div class="container">
-  <div class="header">
-    <h1>To-Do List</h1>
-  </div>
-  <hr>
-  <form id="task-form">
-    <div class="input-section">
-      <div class="enter-icon">
-      </div>
-      <input type="text" id="task-input" placeholder="Enter task description">
+  <main>
+    <div id="checklist">
+        <div class="header">
+            <h1>
+              TO DO LIST Task's 
+            </h1>
+        </div>
+        <div id="items">
+            <form id="add-form" class="add-form">
+                <label for="add-item">
+                    <input type="text" name="add-item" id="add-item" class="add-form__input"
+                        placeholder="Add a new item to the list..." required autofocus>
+                </label>
+                <button type="button" id="add-button"></button>
+                <div id="error"></div>
+            </form>
+            <ul id="list">
+            </ul>
+        </div>
+        <div id="clear">
+            <button type="button" id="clear-button">Clear all completed</button>
+        </div>
     </div>
-    <button type="submit" class="add-btn"></button>
-  </form>
-  <hr>
-  <ul id="todo-list">
-    
-  </ul>
-  <hr>
-  <div class="clear">
-  <button id="clear-completed-button">Clear All Completed</button>
-</div>
-</div>
+</main>
 
 
   <script src="../dist/main.js"></script>
