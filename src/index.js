@@ -1,3 +1,3 @@
-import "./style.css";
-import "./js/display.js";
-import "./js/deleteCompleted.js";
+import './style.css';
+import './js/display.js';
+import './js/deleteCompleted.js';
